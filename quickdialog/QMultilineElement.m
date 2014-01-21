@@ -49,10 +49,12 @@
     textController.textView.autocapitalizationType = self.autocapitalizationType;
     textController.textView.returnKeyType = self.returnKeyType;
 
-    __block QMultilineElement *weakSelf = self;
+    __weak QMultilineElement *weakSelf = self;
+    __weak QMultilineTextViewController *weakTextController = textController;
     textController.willDisappearCallback = ^ {
-        weakSelf.textValue = textController.textView.text;
+        weakSelf.textValue = weakTextController.textView.text;
         [[tableView cellForElement:weakSelf] setNeedsDisplay];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
     };
     [controller displayViewController:textController];
 }
