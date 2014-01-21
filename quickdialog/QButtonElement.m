@@ -43,7 +43,7 @@
     }
     
     cell.textLabel.text = _title;
-    cell.textLabel.textAlignment = UITextAlignmentCenter;
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
     return cell;
 }
 

@@ -87,7 +87,7 @@
         CGSize maximumLabelSize = CGSizeMake(maxWidth,maxHeight);
         CGSize expectedLabelSize = [section.title sizeWithFont:[UIFont systemFontOfSize:[UIFont labelFontSize]]
                                               constrainedToSize:maximumLabelSize
-                                                  lineBreakMode:UILineBreakModeWordWrap];
+                                                  lineBreakMode:NSLineBreakByWordWrapping];
 
         stringTitleHeight = expectedLabelSize.height+23.f;
     }

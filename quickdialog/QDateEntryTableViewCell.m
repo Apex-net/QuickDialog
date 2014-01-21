@@ -71,7 +71,7 @@ UIDatePicker *QDATEENTRY_GLOBAL_PICKER;
     self.centeredLabel.textColor = [UIColor colorWithRed:0.243 green:0.306 blue:0.435 alpha:1.0];
     self.centeredLabel.highlightedTextColor = [UIColor whiteColor];
     self.centeredLabel.font = [UIFont systemFontOfSize:17];
-    self.centeredLabel.textAlignment = UITextAlignmentCenter;
+    self.centeredLabel.textAlignment = NSTextAlignmentCenter;
 	self.centeredLabel.backgroundColor = [UIColor clearColor];
     self.centeredLabel.frame = CGRectMake(10, 10, self.contentView.frame.size.width-20, self.contentView.frame.size.height-20);
     [self.contentView addSubview:self.centeredLabel];

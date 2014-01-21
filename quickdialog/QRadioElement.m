@@ -114,7 +114,7 @@
         cell.textField.text = selectedValue;
         cell.imageView.image = nil;
     }
-    cell.textField.textAlignment = UITextAlignmentRight;
+    cell.textField.textAlignment = NSTextAlignmentRight;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     cell.textField.userInteractionEnabled = NO;
